@@ -483,6 +483,7 @@ header .fixed-menu .fixed-right-menu .search::after{
   font-size: 18px;
 }
 
+/* best */
 .main02Box .inner .main02-inner .best-container{ 
   position: relative;
   width: 50%;
@@ -490,26 +491,30 @@ header .fixed-menu .fixed-right-menu .search::after{
   position: relative;
   /* padding-top:50%; */
   float: right;
-  /* background: url(../images/bestmenu3.jpg)no-repeat center; */
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
 }
-/* .best-container .rotating-slider ul.slides li .inner {
-  display: block;
-  position: relative;
+.main02Box .inner .main02-inner .best-container .mySwiper{
   width: 100%;
-  height: 100%;
+  height: 937px;
 }
-.best-container .rotating-slider ul.slides li .inner img{
-  display: block;
-  position: relative;
-  height: 100%;
+.main02Box .inner .main02-inner .best-container .slide111{
+  background: url(../images/best1.png)no-repeat center/cover;
   width: 100%;
-  transform: rotate(270deg);
-} */
-/* .rotating-slider ul.slides li { background-color: transparent } */
-.main02Box .inner .main02-inner .best-container .rotating-slider .slides li { background-color: transparent }
+  height: 937px;
+}
+.main02Box .inner .main02-inner .best-container .slide222{
+  background: url(../images/best2.png)no-repeat center/cover;
+  width: 100%;
+  height: 937px;
+}
+.main02Box .inner .main02-inner .best-container .slide333{
+  background: url(../images/best3.png)no-repeat center/cover;
+  width: 100%;
+  height: 937px;
+}
+
 /* ---------------------------main03-inner영역------------------------ */
 .main03Box .inner .main03-inner{
   width: 100%;
