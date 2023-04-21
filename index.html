@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shlush</title>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- gsap cdn /gsap.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap cdn /ScrollToPlugin.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"
+        integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- rotating slider -->
+    <link rel="stylesheet" href="css/rotating-slider.css">
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery.rotating-slider.js"></script>
+    <!-- 내파일 -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 섹션이동메뉴 -->
+    <ul class="section-menu">
+        <li><a href="#"><span></span></a></li>
+        <li><a href="#"><span></span></a></li>
+        <li><a href="#"><span></span></a></li>
+        <li><a href="#"><span></span></a></li>
+        <li><a href="#"><span></span></a></li>
+    </ul>
+    <!-- 상단고정메뉴 -->
+    <header class="header">
+        <div class="fixed-menu">
+            <h2><a href="#"><img src="images/서브러쉬로고.png" alt="sub-logo"></a></h2>
+            <div class="fixed-left-menu">
+                <ul class="fixed-left-menu-depth1">
+                    <li>
+                        <a href="#">PRODUCT</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">BEST</a>
+                            </li>
+                            <li>
+                                <a href="#">NEW</a>
+                            </li>
+                            <li>
+                                <a href="#">GIFT</a>
+                            </li>
+                            <li>
+                                <a href="#">ALL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">ABOUT AS</a>
+                            </li>
+                            <li>
+                                <a href="#">STORY</a>
+                            </li>
+                            <li>
+                                <a href="#">CAMPAIGN</a>
+                            </li>
+                            <li>
+                                <a href="#">CHARITY POT</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">STORE</a>
+                    </li>
+                    <li>
+                        <a href="#">SPA</a>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                    </li>
+                    <li>
+                        <a href="#">COMMUNITY</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">GEL LUSH</a>
+                            </li>
+                            <li>
+                                <a href="#">LUSH TIMES</a>
+                            </li>
+                            <li>
+                                <a href="#">COOL LUSH</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="fixed-right-menu">
+                <span>CART</span>
+                <span>LOGIN</span>
+                <span class="search">SEARCH</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrap">
+        <!-- main01 -->
+        <section class="main01Box">
+            <div class="inner">
+                <section class="main01-inner section">
+                    <div class="top-menu-wrap">
+                        <div class="top-logo">
+                            <h1><a href="#"><img src="images/메인러쉬로고.png" alt=""></a></h1>
+                        </div>
+                        <div class="top-menu">
+                            <span>CART</span>
+                            <span>LOGIN</span>
+                            <span>SEARCH</span>
+                            <span><img src="" alt=""></span>
+                        </div>
+                    </div>
+                    <!-- 메인사이드메뉴 -->
+                    <div class="mb-nav-main">
+                        <ul class="mb-menu">
+                            <li>
+                                <a href="#" class="mb-mainmenu">PRODUCT</a>
+                                <ul class="mb-submenu">
+                                    <li>
+                                        <a href="#">BEST</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">NEW</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GIFT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ALL</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="mb-mainmenu">ABOUT</a>
+                                <ul class="mb-submenu">
+                                    <li>
+                                        <a href="#">ABOUT AS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">STORY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CAMPAIGN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CHARITY POT</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="mb-mainmenu">COMMUNITY</a>
+                                <ul class="mb-submenu">
+                                    <li>
+                                        <a href="#">GEL LUSH</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">LUSH TIMES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">COOL LUSH</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="mb-mainmenu">STORE</a>
+                            </li>
+                            <li>
+                                <a href="#" class="mb-mainmenu">SPA</a>
+
+                            </li>
+                            <li>
+                                <a href="#" class="mb-mainmenu">EVENT</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper main01-swiper1">
+                            <div class="swiper-slide slide01">
+                                <i></i>
+                            </div>
+                            <div class="swiper-slide slide02">
+                                <i></i>
+                            </div>
+                            <div class="swiper-slide slide03">
+                                <i></i>
+                            </div>
+                            <div class="swiper-slide slide04">
+                                <i></i>
+                            </div>
+                            <div class="swiper-slide slide05">
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- main02 -->
+        <section class="main02Box">
+            <div class="inner">
+                <div class="main02-inner section clearfix">
+                    <div class="category-container clearfix">
+                        <div class="perfume-section category">
+                            <p>PERFUME</p>
+                        </div>
+                        <div class="naked-section category">
+                            <p>NAKED</p>
+                        </div>
+                        <div class="mask-section category">
+                            <p>MASK</p>
+                        </div>
+                        <div class="bathbomb-section category">
+                            <p>BATH BOMB</p>
+                        </div>
+                    </div>
+                    <div class="best-container">
+                        <div class="rotating-slider">
+                            <ul class="slides">
+                                <li>
+                                    
+                                    <img src="images/blueimg.png" alt="">
+                                </li>
+                                <li>
+                                    <!-- <div class="container">
+                                       
+                                    </div> -->
+                                </li>
+                                <li>
+
+                                    <img src="images/floating1.png" alt="">
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+
+                                    <img src="images/floating1.png" alt="">
+
+                                </li>
+                                <li>
+                                    <div class="inner">
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main03 -->
+        <section class="main03Box">
+            <div class="inner">
+                <section class="main03-inner section">
+                    <div class="noticeBoard-container">
+                        <!-- 탭메뉴 -->
+                        <div class="main03-text-wrap">
+                            <a class="main03-btn" href="#work1">NOTICE</a>
+                            <a class="main03-btn" href="#work2">EVENT</a>
+                            <a class="main03-btn" href="#work3">CAMPAIGN</a>
+                        </div>
+                        <!-- notice-공지사항영역 -->
+                        <div class="main03-noticeBox tab clear" id="work1">
+                            <div class="left-imgBox noticeImg">
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="right-txtBox">
+                                <div class="right-container">
+                                    <h3>NOTICE</h3>
+                                    <!-- notice-Swiper -->
+                                    <div class="swiper main03-noticeBox-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide slide01">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">[공지] 2023 프레쉬 세일 종료 및 배송지연 안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[공지] 2023 발렌타인데이 제품 업로드 관련 안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[공지] 2022 연말 러쉬 포인트 적립 관련 안내</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="swiper-slide slide02">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">[공지] 2023 프레쉬 세일 종료 및 배송지연 안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[공지] 2023 발렌타인데이 제품 업로드 관련 안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[공지] 2022 연말 러쉬 포인트 적립 관련 안내</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="swiper-slide slide03">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">[공지] 2023 프레쉬 세일 종료 및 배송지연 안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[공지] 2023 발렌타인데이 제품 업로드 관련 안내</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[공지] 2022 연말 러쉬 포인트 적립 관련 안내</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="main03-notice-more" href="#">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- event-이벤트영역 -->
+                        <div class="main03-eventBox tab clear" id="work2">
+                            <div class="left-h3-zone">
+                                <h3>EVENT</h3>
+                            </div>
+                            <div class="center-imgBox eventImg">
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="side-txtBox">
+                                <div class="side-txtBox-container">
+                                    <div class="swiper main03-eventBox-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide slide21">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">[이벤트] Let's drive for LOVE! 멈추지 않는 사랑을 전해보세요!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[이벤트] 틀린 토끼 찾기! 발달장애 아티스트와 함께하는 토끼전!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[이벤트] 프레쉬 세일 받고 또 받기! 행운의 주인공이 되어 보세요!</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="swiper-slide slide22">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">[이벤트] Let's drive for LOVE! 멈추지 않는 사랑을 전해보세요!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[이벤트] 틀린 토끼 찾기! 발달장애 아티스트와 함께하는 토끼전!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[이벤트] 프레쉬 세일 받고 또 받기! 행운의 주인공이 되어 보세요!</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="swiper-slide slide23">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">[이벤트] Let's drive for LOVE! 멈추지 않는 사랑을 전해보세요!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[이벤트] 틀린 토끼 찾기! 발달장애 아티스트와 함께하는 토끼전!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">[이벤트] 프레쉬 세일 받고 또 받기! 행운의 주인공이 되어 보세요!</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="main03-event-more" href="#">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 캠페인영역 -->
+                        <div class="main03-campaignBox tab" id="work3">
+                            <div class="right-imgBox campaignImg">
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="left-txtBox">
+                                <h3>CAMPAIGN</h3>
+                                <div class="swiper main03-campaignBox-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide31">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">[캠페인] 젤러쉬 6기와 함께 #플라스틱줍깅 시즌2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">[캠페인] #플라스틱 줍깅 시즌2, 그 두번째 이야기(1)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">[캠페인] 동물실험 대체 위해 달려온 '러쉬 프라이즈' 10주년</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="swiper-slide slide32">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">[캠페인] 젤러쉬 6기와 함께 #플라스틱줍깅 시즌2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">[캠페인] #플라스틱 줍깅 시즌2, 그 두번째 이야기(1)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">[캠페인] 동물실험 대체 위해 달려온 '러쉬 프라이즈' 10주년</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="swiper-slide slide33">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">[캠페인] 젤러쉬 6기와 함께 #플라스틱줍깅 시즌2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">[캠페인] #플라스틱 줍깅 시즌2, 그 두번째 이야기(1)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">[캠페인] 동물실험 대체 위해 달려온 '러쉬 프라이즈' 10주년</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="main03-campaign-more" href="#">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- main04 -->
+        <section class="main04Box">
+            <div class="inner">
+                <section class="main04-inner section">
+                    <div class="main04-innerwrap">
+                        <span>ENJOY LUSH</span>
+                        <!-- main04-swiper -->
+                        <div class="swiper main04swiper">
+                            <div class="swiper-wrapper swiper2">
+                                <div class="swiper-slide slide11">
+                                    <video
+                                        src="images/y2mate.com - LUSH SPA 지친 근육으로 뻐근했던 하루의 시원한 마무리가 필요한 당신을 위한 트리트먼트_1080p.mp4"
+                                        autoplay muted loop></video>
+                                </div>
+                                <!-- <div class="swiper-slide slide12"></div>
+                                <div class="swiper-slide slide13"></div>
+                                <div class="swiper-slide slide14"></div>
+                                <div class="swiper-slide slide15"></div> -->
+                            </div>
+                            <div class="main04-swiper-scrollbar"></div>
+                        </div>
+                        <!-- main04 img banner -->
+                        <div class="main04-bottom">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer-inner">
+                    <div class="footer-top clear">
+                        <a href="#">러쉬소개</a>
+                        <a href="#">커뮤니티</a>
+                        <a href="#">채용안내</a>
+                        <a href="#" style="color:#ffde00">개인정보처리방침</a>
+                        <a href="#">영상정보관리지침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">1:1</a>
+                    </div>
+                    <div class="footer-bottom clear">
+                        <div class="footer-bot-left">
+                            <div class="footer-bot-left-container">
+                                <div class="text">
+                                    <input type="email" class="email" placeholder="이메일 주소를 입력해주세요.">
+                                    <button>SEND</button>
+                                </div>
+                                <div class="moreview">
+                                    <p>매주 월요일 오후, 구독자님을 위한 제품과 브랜드 이야기를 전해 드립니다. <br>구독은 언제든지 해지하실 수 있습니다.</p>
+                                    <span>미리보기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bot-right">
+                            <div class="footer-bot-right-container clear">
+                                <p class="customer">
+                                    <span>고객센터</span>
+                                    <span>1644-2357</span>
+                                    <span>Webmaster@lush.co.kr</span>
+                                    <span>상담전화 13:00~16:00(평일)</span>
+                                    <span>상담톡 10:00~16:00(평일)</span>
+                                </p>
+                                <p class="company">
+                                    <span>기업선물</span>
+                                    <span>070-4713-8543</span>
+                                    <span>order@lush.co.kr</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
